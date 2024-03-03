@@ -30,16 +30,16 @@ export default function Travelsearch({detail,setdetail,status,setstatus,login,in
     
     return(
         <div style={{border:'1px solid gray',borderRadius:"7px",marginLeft:"10%",marginRight:"10%"}}>
-        <div id="option" style={{display:"flex",gap:"30px",justifyContent:"center",borderBottom:'1px solid gray',padding:"20px",fontSize:"15px",fontWeight:"bold"}}>
-            <div className="navlink">Stays</div>
-            <div className="navlink">Flights</div>
+        <div  id="option" style={{display:"flex",gap:"5%",justifyContent:"center",borderBottom:'1px solid gray',padding:"20px",fontSize:"15px",fontWeight:"bold"}}>
+            <div classname='text-3xl font-bold underline'>Stays</div>
+            <div className="text-3xl font-bold underline">Flights</div>
             <div className="navlink">Cars</div>
             <div className="navlink">Packages</div>
             <div className="navlink">Things to do</div>
             <div className="navlink">Cruises</div>
             </div>
             <br/>
-            <div style={{display:"flex",justifyContent:"space-around",gap:"5px",paddingTop:"5px",padding:"20px",paddingBottom:"25px"}} >
+            <div style={{display:"flex",justifyContent:"space-around",gap:"1%",paddingTop:"5px",padding:"20px",paddingBottom:"25px"}} >
             
         <input type="place" name="destination" onChange={savedata} value={inputdata.destination} style={{width:"28%",height:"2.6rem",borderRadius:"5px",paddingLeft:".8%",border:'1px solid gray'}} placeholder="Going to"/>
         <input type="date" name="date" onChange={savedata} value={inputdata.date} style={{width:"28%",height:"2.7rem",borderRadius:"5px",border:'1px solid gray',paddingLeft:".8%"}} placeholder="17 Nov - 14 Dec"/>
